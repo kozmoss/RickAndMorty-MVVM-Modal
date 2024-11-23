@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		11C0B9962CF1F21D000D5650 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11C0B9952CF1F21D000D5650 /* SnapKit */; };
+		11C0B9B82CF20E8A000D5650 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 11C0B9B72CF20E8A000D5650 /* Alamofire */; };
+		11C0B9BB2CF20EB6000D5650 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 11C0B9BA2CF20EB6000D5650 /* AlamofireImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		11C0B96E2CF1E8A5000D5650 /* RickAndMorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11C0B9962CF1F21D000D5650 /* SnapKit in Frameworks */,
+				11C0B9B82CF20E8A000D5650 /* Alamofire in Frameworks */,
+				11C0B9BB2CF20EB6000D5650 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +87,9 @@
 			);
 			name = RickAndMorty;
 			packageProductDependencies = (
+				11C0B9952CF1F21D000D5650 /* SnapKit */,
+				11C0B9B72CF20E8A000D5650 /* Alamofire */,
+				11C0B9BA2CF20EB6000D5650 /* AlamofireImage */,
 			);
 			productName = RickAndMorty;
 			productReference = 11C0B96E2CF1E8A5000D5650 /* RickAndMorty.app */;
@@ -107,6 +119,11 @@
 			);
 			mainGroup = 11C0B9652CF1E8A5000D5650;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				11C0B9942CF1F21D000D5650 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				11C0B9B62CF20E8A000D5650 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				11C0B9B92CF20EB6000D5650 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 11C0B96F2CF1E8A5000D5650 /* Products */;
 			projectDirPath = "";
@@ -335,6 +352,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11C0B9942CF1F21D000D5650 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		11C0B9B62CF20E8A000D5650 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		11C0B9B92CF20EB6000D5650 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11C0B9952CF1F21D000D5650 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11C0B9942CF1F21D000D5650 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		11C0B9B72CF20E8A000D5650 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11C0B9B62CF20E8A000D5650 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		11C0B9BA2CF20EB6000D5650 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11C0B9B92CF20EB6000D5650 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11C0B9662CF1E8A5000D5650 /* Project object */;
 }
